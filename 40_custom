@@ -14,8 +14,7 @@ menuentry '4.9.9 Arch Linux' --class arch --class gnu-linux --class gnu --class 
 	  search --no-floppy --fs-uuid --set=root 
 	fi
 	echo	'Loading Linux core repo kernel ...'
-	linux	/boot/vmlinuz-4.9.9 root=UUID=93f9f2dd-2d67-4435-adf2-89b24d22a1b6 rw  quiet
+	linux	/boot/vmlinuz-linux-4.9.9 root=UUID=93f9f2dd-2d67-4435-adf2-89b24d22a1b6 rw  quiet
 	echo	'Loading initial ramdisk ...'
-	initrd	/boot/initramfs-4.9.9.img
+	initrd	/boot/initramfs-linux-4.9.9.img
 }
-# https://github.com/CocVu/osAssignment/blob/master/40_custom
